@@ -67,9 +67,22 @@ h4, .cuatro {font-size: 1.333em;}
 
 small, .font_small {font-size: 0.75em;}
 
-a,.orange {
+a,
+a:visited,
+a:link,
+.orange {
     color: #ff7032;
     text-decoration: none;
+    -ms-transition: color 250ms ease-in-out;
+    -o-transition: color 250ms ease-in-out;
+    -moz-transition: color 250ms ease-in-out;
+    -webkit-transition: color 250ms ease-in-out;
+    transition: color 250ms ease-in-out;
+}
+
+a:hover,
+a:active {
+    color: #2f629d;
 }
 
 ul {
