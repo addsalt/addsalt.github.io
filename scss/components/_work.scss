@@ -47,8 +47,13 @@
         .a-text {
             opacity: .6;
         }
-        .work-title {
+        figcaption {
             display: none;
+            @media #{$media-l} {
+                display: block;
+            }
+        }
+        .work-title {
             position: absolute;
             @media #{$media-l} {
                 display: block;
