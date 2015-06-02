@@ -1,4 +1,2 @@
-addsalt.github.io
-=================
-
-The Personal Website of Daniela Chavez Ackermann
+# justaddsalt
+Salt's shiny new website.

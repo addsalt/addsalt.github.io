@@ -1,0 +1,116 @@
+// Header & Footer Styles
+
+header {
+    text-align: center;
+    padding: 42px 21px 48px;
+    @media #{$media-m} {
+      padding: 10%;
+    }
+    a {
+        text-decoration: none;
+        color: $dark;
+    }
+    @media only screen and (min-width: 38em) {
+        ul {
+            li {
+                display: inline-block;
+                line-height: .9;
+                padding: 1px 10px 3px;
+            }
+            li:first-child {
+                padding-left: 0px;
+            }
+            li:last-child {
+                border-left: solid 2px $dark;
+            }
+        }
+    }
+}
+
+footer {
+    @include zero;
+    padding: 42px 21px;
+    @media #{$media-m} {
+      padding: 5.25rem 10%;
+    }
+    .copyright {
+        color: $grey;
+        line-height: 16px;
+    }
+    ul {
+        li {
+            font-family: $cooper;
+        }
+        a {
+            font-family: $clarendon;
+            color: $red;
+            font-style: italic;
+            text-decoration: none;
+        }
+    }
+    .tres {
+        line-height: 27px;
+    }
+    .foot-holder {
+        display: block;
+        overflow: auto;
+    }
+    .col {
+        display: block;
+    }
+    @media #{$media-l} {
+        .col {
+            float: left;
+        }
+        .col-1 {
+            width: 40%;
+        }
+        .col-2 {
+            width: 39%;
+            padding-top: 24px;
+            padding-right: 2rem;
+        }
+        .col-3 {
+            padding-top: 24px;
+            width: 21%;
+        }
+    }
+    @media only screen and (min-width: 80em) {
+        .col-2 {
+            padding-right: 9rem;
+        }
+    }
+}
+
+/* Type and Spacings */
+
+header {
+    h1 {
+        font-size: 60px; 
+        line-height: 1;
+        @media #{$media-l} {
+            font-size: 120px;
+            margin-top: 33px;
+        }
+    }
+    .contact-info {
+        margin-top: 16px;   
+    }
+    .intro {
+        font-family: $cooper;
+        color: $dark;
+        font-size: 1.25em;
+        @media #{$media-l} {
+            font-size: 2.5em;
+        }
+        line-height: 1.25;
+        max-width: 60rem;
+        margin: 21px auto 0;
+    }
+}
+
+footer {
+    h1 {
+        margin-bottom: 9px;
+    }
+}
