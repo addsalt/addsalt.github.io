@@ -48,8 +48,10 @@
             opacity: .6;
         }
         .work-title {
+            display: none;
             position: absolute;
             @media #{$media-l} {
+                display: block;
                 top: 1rem;
                 left: 1rem;
                 top: 35px;
