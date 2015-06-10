@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="handheldfriendly" content="true">
+	<meta name="mobileoptimized" content="240">
+	<meta name="viewport" content="width=device-width,intial-scale=1">
+	<meta name="description" content="We are a small team of independent creatives in Ottawa, Ontario, who think big, obsess over little details, and have <em>ideas that taste good.">
+	<link href="css/style.css" rel="stylesheet">
+	<title>Salt: Ideas that taste good.</title>
+    <script src="//use.typekit.net/vsn8lti.js"></script>
+    <script>try{Typekit.load();}catch(e){}</script>
+</head>
+	
+<body>
+	
+	<!-- Header -->
+    
+	<header>
+        <div class="fadeInUp">
+            <h1>Our process.</h1>
+            <ul class="brand contact-info">
+                <li><a href="tel:6132619502">(613) 261 · 9502</a></li>
+                <li><a href="mailto:just@addsalt.ca"><em class="red">just@addsalt.ca</em></a></li>
+            </ul>
+        </div>
+        <div class="fadeIn delay-1 bottom">
+            <a class="brand push-top-1" href="#work">See our work below.</a>
+            <a class="brand push-top-2 red" href="http://www.instagram.com/just_addsalt" target="_blank">instagram<i class="i-insta"></i><em>@justaddsalt</em></a>
+        </div>
+    </header>
+
+	<!-- Work -->	
+    
+    <main>
+
+    
+    </main>
+	
+	<!-- Footer -->
+	
+	<footer id="footer">
+        <div class="foot-holder">
+            <div class="col col-1">
+                <h1>Salt.</h1>
+                <p class="font_small copyright">© 2015 Just Add Salt</br>Communications.</p>
+            </div>
+            <div class="col col-2 push-top-3-mb">
+                <h2 class="tres">Pass the salt.</h2>
+                <p class="intro">We thrive on developing close and trusting relationships with our clients. Have an idea for a project? Let's meet. The first coffee is always on us.</p>
+                <p class="brand push-top-1 tres">Ideas that taste good.</p>
+            </div>
+            <div class="col col-3">
+                <h2 class="tres push-top-3-mb">Get in touch.</h2>
+                <ul class="push-top-1">
+                    <li>eMail: <a href="mailto:just@addsalt.ca">just<span class="kern-right-1">@</span>addsalt.<span class="kern-left-1">ca</span></a></li>
+                    <li>Phone: <a href="tel:6132619502">(613<span class="kern-left-2">)</span> 261 <span class="kern-left-2">·</span> 95<span class="kern-left-1">0</span><span class="kern-right-1">2</span></a></li>
+                    <li>Instagram: <a href="http://www.instagram.com/just_addsalt" target="_blank">@justaddsalt</a></li>
+                </ul>
+            </div>
+        </div>
+	</footer>
+	
+</body>
+
+<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="js/jquery.countTo.js"></script>
+<script src="js/waypoints.min.js"></script>
+<script src="js/waypoints-items.js"></script>
+
+<script>
+    $(function() {
+      $('a[href*=#]:not([href=#])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+          if (target.length) {
+            $('html,body').animate({
+              scrollTop: target.offset().top
+            }, 1000);
+            return false;
+          }
+        }
+      });
+    });
+</script>
+</html>
