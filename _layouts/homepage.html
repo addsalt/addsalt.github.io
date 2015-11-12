@@ -1,0 +1,76 @@
+---
+layout: default
+---
+
+{% include nav.html %}
+
+<section id="intro">
+    <div class="unit unit-xs-1 unit-s-1 unit-m-1 unit-l-5-8">
+        {% include intro-par.html %}
+    </div>
+</section>
+
+<section id="work">
+
+    {{content}}
+
+</section>
+
+<section id="about-project" class="push-top">
+    <div class="max-width">
+        <div class="more-projects">
+            <h2 class="reg neuzeit underline no-margin-top">Other Projects</h2>
+            <ul class="project-list neuzeit">
+                <!--LVD Fitness--><li><a href="{{site.baseurl}}/work/lvd-fitness/" class="{% if page.url == '/lvd-fitness.html' %}current{% endif %}">LVD Fitness</a></li>
+
+                <!--NFID--><li><a href="{{site.baseurl}}/work/national-fire-information-database/" class="{% if page.url == '/national-fire-information-database.html' %}current{% endif %}">NFID</a></li>
+
+                <!--Enhansoft--><li><a href="{{site.baseurl}}/work/enhansoft/" class="{% if page.url == '/enhansoft.html' %}current{% endif %}">Enhansoft</a></li>
+
+                <!--Sigil & Growler--><li><a href="{{site.baseurl}}/work/sigil-and-growler/" class="{% if page.url == '/sigil-and-growler.html' %}current{% endif %}">Sigil &amp; Growler</a></li>
+
+                <!--Dive--><li><a href="{{site.baseurl}}/work/dive/" class="{% if page.url == '/dive.html' %}current{% endif %}">Dive</a></li>
+
+                <!--Rhapsody Strategies--><li><a href="{{site.baseurl}}/work/rhapsody-strategies/" class="{% if page.url == '/rhapsody-strategies.html' %}current{% endif %}">Rhapsody Strategies</a></li>
+
+                <!--The Door <li><a href="{{site.baseurl}}/work/the-door-mural/" class="{% if page.url == '/the-door-mural.html' %}current{% endif %}">The Door Mural</a></li>-->
+
+                <!--Freshmart--><li><a href="{{site.baseurl}}/work/freshmart/" class="{% if page.url == '/freshmart.html' %}current{% endif %}">Freshmart</a></li>
+            </ul>
+        </div>
+    </div>
+</section> 
+
+<section id="about" class="push-top">
+    <div class="max-width">
+        <div id="contact">
+            {% include contact-info.html %}
+        </div>
+
+        <div class="grid about-bottom">
+
+            <!-- Team -->
+            <div id="team" class="unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1-2 gutter-right">
+                <h2 class="reg neuzeit underline">The team.</h2>
+                {% include dani.html %}
+                {% include jared.html %}
+                {% include jesse.html %}
+            </div> <!-- End Team -->
+
+            <!-- Services -->
+            <div id="services" class="font_small unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1-2 gutter-left">
+                {% include services.html %}
+                {% include people-we-like.html %}
+            </div> <!-- End Services -->
+
+        </div> <!-- End Team/Services -->
+    </div>
+</section> <!-- End About -->
+
+
+<footer>
+    <div class="footer-container">
+        <p class="copyright">© 2015 Salt.</p>
+    </div>
+</footer>
+        
