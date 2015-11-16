@@ -88,6 +88,12 @@ header, #intro, #work figcaption, .max-width {
   max-width: 2360px;
 }
 
+@media only screen and (min-width: 70em) {
+  #intro .intro-par {
+    width: 62.5000%;
+  }
+}
+
 header {
   padding-top: 1.25rem;
   padding-bottom: 1.95rem;
@@ -235,12 +241,17 @@ nav ul li {
   width: 26%;
 }
 
-@media only screen and (min-width: 70em) {
+@media only screen and (min-width: 45em) {
   nav ul li {
-    width: 22.95%;
     -webkit-transform: translateY(-2px);
     -ms-transform: translateY(-2px);
     transform: translateY(-2px);
+  }
+}
+
+@media only screen and (min-width: 70em) {
+  nav ul li {
+    width: 22.95%;
   }
 }
 
@@ -395,8 +406,7 @@ nav .instagram-link a i {
 
 @media only screen and (min-width: 38em) {
   #work figcaption h2 {
-    margin-top: 0;
-    line-height: 1.56;
+    margin-top: 1.706208rem;
   }
 }
 
