@@ -1260,6 +1260,7 @@ blockquote cite:after {
 
 .footer-container ul li a {
   text-transform: lowercase;
+    color: white;
 }
 
 .footer-container ul li:nth-child(2) {
